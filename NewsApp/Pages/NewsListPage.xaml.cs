@@ -11,7 +11,7 @@ public partial class NewsListPage : ContentPage
     {
         InitializeComponent();
 
-        Title = char.ToUpper(categoryName[0]) + categoryName.Substring(1); // Capitalize title
+        Title = char.ToUpper(categoryName[0]) + categoryName.Substring(1);
 
         Articles = new List<Article>();
         LoadNews(categoryName);
@@ -24,7 +24,7 @@ public partial class NewsListPage : ContentPage
 
         Articles = newsResult.Articles;
 
-        CvNewsList.ItemsSource = Articles;  // Make sure CvNewsList is the CollectionView name in your XAML
+        CvNewsList.ItemsSource = Articles;
     }
 
     private async void CvNewsList_SelectionChanged(object sender, SelectionChangedEventArgs e)

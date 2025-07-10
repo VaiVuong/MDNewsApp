@@ -46,7 +46,7 @@ public partial class NewsHomePage : ContentPage
 
         ((CollectionView)sender).SelectedItem = null;
 
-        // Navigate to NewsListPage with selected category
+        // Navigate to NewsListPage
         await Navigation.PushAsync(new NewsListPage(selectedCategory.Name.ToLower()));
     }
 
